@@ -33,6 +33,7 @@ body {
   background-repeat: no-repeat;
   background-position: top left, bottom right;
   background-size: 35%, 50%;
+  height: 100vh;
 }
 
 .container {
@@ -40,12 +41,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 rem(20);
-  padding-top: rem(80);
+  padding-top: rem(100);
 
   @include breakpoint-max(sm) {
     // padding: 0 rem(10);
     width: 100%;
-
     padding-top: rem(80);
     max-width: 100vw;
   }
