@@ -6,7 +6,7 @@ import Home from "pages/Home";
 function App() {
   return (
     <main className="container">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/fm-social-proof-section">
         <Route exact path="/" component={Home} />
       </Router>
     </main>
