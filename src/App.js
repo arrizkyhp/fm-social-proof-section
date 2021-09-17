@@ -6,7 +6,7 @@ import Home from "pages/Home";
 function App() {
   return (
     <main className="container">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route exact path="/" component={Home} />
       </Router>
     </main>
