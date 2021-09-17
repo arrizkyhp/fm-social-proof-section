@@ -1,0 +1,59 @@
+@use '../utilities/' as *;
+
+.card-review {
+  background-color: $primary;
+  padding: rem(45) rem(30);
+  border-radius: rem(8);
+  max-height: rem(270);
+
+  @include breakpoint-max(lg) {
+    max-height: rem(320);
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(30);
+
+    img {
+      width: rem(45);
+      height: rem(45);
+      border-radius: 50%;
+      margin-right: rem(20);
+    }
+
+    &__info {
+      h2 {
+        color: white;
+        font-size: rem(15);
+      }
+
+      span {
+        color: $secondary;
+        font-size: rem(15);
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__description {
+    color: white;
+    line-height: rem(23);
+  }
+
+  &:nth-child(2) {
+    margin-top: rem(20);
+
+    @include breakpoint-max(lg) {
+      margin-top: rem(0);
+    }
+  }
+
+  &:nth-child(3) {
+    margin-top: rem(40);
+    @include breakpoint-max(lg) {
+      margin-top: rem(0);
+      width: 100%;
+    }
+  }
+}

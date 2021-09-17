@@ -1,0 +1,65 @@
+@use '../utilities/' as *;
+
+.rating {
+  background-color: $light;
+  border-radius: rem(8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // max-width: rem(480);
+  padding: rem(15) rem(60) rem(15) rem(38);
+  margin-bottom: rem(15);
+
+  @include breakpoint-max(sm) {
+    // flex-direction: column;
+    flex: 1;
+    // max-width: 1000px;
+    padding: rem(0);
+  }
+
+  @include breakpoint-max(md) {
+    width: 100%;
+  }
+
+  @include breakpoint-max(lg) {
+    flex-direction: column;
+    padding: rem(15) rem(30);
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: rem(14);
+
+    @include breakpoint-max(sm) {
+      margin-top: rem(20);
+      font-size: rem(15);
+    }
+
+    @include breakpoint-max(lg) {
+      margin-top: rem(20);
+    }
+  }
+
+  &:nth-child(1) {
+    margin-right: rem(80);
+
+    @include breakpoint-max(lg) {
+      margin-right: rem(0);
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: rem(40);
+
+    @include breakpoint-max(lg) {
+      margin-right: rem(0);
+    }
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 0;
+    @include breakpoint-max(lg) {
+      margin-right: rem(0);
+    }
+  }
+}

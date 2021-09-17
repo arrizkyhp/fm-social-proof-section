@@ -1,0 +1,67 @@
+@use '../utilities/' as *;
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: rem(70);
+
+  @include breakpoint-max(sm) {
+    flex: 1;
+  }
+
+  @include breakpoint-max(md) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+
+    @include breakpoint-max(sm) {
+      flex: 1;
+    }
+
+    @include breakpoint-max(md) {
+      align-items: center;
+    }
+  }
+
+  .information {
+    max-width: rem(478);
+
+    @include breakpoint-max(sm) {
+      // max-width: 100%;
+      text-align: center;
+    }
+
+    @include breakpoint-max(md) {
+      margin-bottom: rem(30);
+    }
+
+    h1 {
+      letter-spacing: rem(-2);
+      margin-bottom: rem(10);
+      font-size: rem(48);
+
+      @include breakpoint-max(md) {
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: $base-font-size;
+      font-weight: 500;
+      color: $dark;
+      line-height: rem(24.5);
+
+      @include breakpoint-max(md) {
+        text-align: center;
+      }
+    }
+  }
+}

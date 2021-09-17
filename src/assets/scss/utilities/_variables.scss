@@ -1,0 +1,30 @@
+@use 'functions' as *;
+
+// Colors
+$primary: hsl(300, 43%, 22%);
+$secondary: hsl(333, 80%, 67%);
+$dark: hsl(303, 10%, 53%);
+$light: hsl(300, 24%, 96%);
+$orange: #ef9546;
+
+// Colors Pallete
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "orange": $orange,
+  "black": black,
+  "white": white,
+);
+
+// Font-sizes
+$base-font-size: rem(15) !default;
+
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// border radius
+$base-border-radius: rem(20) !default;

@@ -1,0 +1,49 @@
+@use '../utilities/' as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: $font-family;
+  min-width: 100vh;
+  background-image: url(assets/images/bg-pattern-top-desktop.svg), url(assets/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-size: 35%, 50%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 rem(20);
+  padding-top: rem(80);
+
+  @include breakpoint-max(sm) {
+    padding: 0 rem(40);
+    padding-top: rem(80);
+  }
+}
