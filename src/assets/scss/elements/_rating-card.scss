@@ -11,7 +11,7 @@
   margin-bottom: rem(15);
 
   @include breakpoint-max(sm) {
-    // flex-direction: column;
+    flex-direction: column;
     flex: 1;
     // max-width: 1000px;
     padding: rem(0);
@@ -22,7 +22,6 @@
   }
 
   @include breakpoint-max(lg) {
-    flex-direction: column;
     padding: rem(15) rem(30);
   }
 
@@ -33,10 +32,6 @@
     @include breakpoint-max(sm) {
       margin-top: rem(20);
       font-size: rem(15);
-    }
-
-    @include breakpoint-max(lg) {
-      margin-top: rem(20);
     }
   }
 
